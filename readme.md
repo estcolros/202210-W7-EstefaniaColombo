@@ -72,4 +72,4 @@ Create the following TS files and make them work as modules via import and expor
 
 ## Netlify
 
-**Deploy:**
+**Deploy:** https://estcolros-week7-got.netlify.app/
