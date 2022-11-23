@@ -1,5 +1,4 @@
 .vscode/
-dist/scripts
 
 # Logs
 logs
@@ -89,6 +88,7 @@ web_modules/
 # Next.js build output
 .next
 out
+
 
 # Nuxt.js build / generate output
 .nuxt
