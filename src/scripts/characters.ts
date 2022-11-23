@@ -1,7 +1,7 @@
-import King from './King.js';
-import Fighter from './Fighter.js';
-import Squire from './Squire.js';
-import Advisor from './Advisor.js';
+import { King } from './King.js';
+import { Fighter } from './Fighter.js';
+import { Squire } from './Squire.js';
+import { Advisor } from './Advisor.js';
 
 const joffrey = new King(
     'Joffrey',
@@ -9,6 +9,7 @@ const joffrey = new King(
     16,
     true,
     'You are all going to die.',
+    '/assets/images/joffrey.jpg',
     2
 );
 
@@ -18,6 +19,7 @@ const jaime = new Fighter(
     35,
     true,
     'First I hit and then I ask',
+    '/assets/images/jaime.jpg',
     8,
     'Sword'
 );
@@ -27,6 +29,7 @@ const daenerys = new Fighter(
     24,
     true,
     'First I hit and then I ask',
+    '/assets/images/daenerys.jpg',
     10,
     'Dragons'
 );
@@ -37,7 +40,8 @@ const tyrion = new Advisor(
     39,
     true,
     "I don't know why, but I think I'm going to die soon",
-    daenerys
+    '/assets/images/tyrion.jpg',
+    'Daenerys'
 );
 
 const bronn = new Squire(
@@ -46,15 +50,10 @@ const bronn = new Squire(
     56,
     true,
     "I'm a loser",
+    '/assets/images/bronn.jpg',
     0,
-    jaime
+    'Jaime'
 );
 
-joffrey.imageSource = '/assets/images/joffrey.jpg';
-jaime.imageSource = '/assets/images/jaime.jpg';
-daenerys.imageSource = '/assets/images/daenerys.jpg';
-tyrion.imageSource = '/assets/images/tyrion.jpg';
-bronn.imageSource = '/assets/images/bronn.jpg';
-
-const charactersList = [joffrey, jaime, daenerys, tyrion, bronn];
-export default charactersList;
+export const characters = [joffrey, jaime, daenerys, tyrion, bronn];
+console.log(characters);

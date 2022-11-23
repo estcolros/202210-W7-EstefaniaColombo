@@ -1,20 +1,19 @@
-import character from './character.js';
+import { Character } from './Character.js';
 
-export class King extends character {
+export class King extends Character {
     constructor(
         name: string,
         family: string,
         age: number,
-        state: boolean,
+        isAlive: boolean,
         message: string,
+        imageSource: string,
         public yearsOfReign: number
     ) {
-        super(name, family, age, state, message);
-    }
+        //Character(name: string, family: string, age: number, isAlive: boolean, message: string, imageSource: string, serie?: string, emoji?: string): Character
 
-    communicate() {
-        return `${super.communicate()}You are all going to die.`;
+        super(name, family, age, isAlive, message, imageSource);
+        this.message = 'You are all going to die.';
+        this.emoji = '👑';
     }
 }
-
-export default King;
