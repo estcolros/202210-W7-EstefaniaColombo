@@ -1,21 +1,18 @@
-import character from './character.js';
+import { Character } from './Character.js';
 
-export class Squire extends character {
+export class Squire extends Character {
     constructor(
         name: string,
         family: string,
         age: number,
-        state: boolean,
+        isAlive: boolean,
         message: string,
-        degreeOfPelotism: number,
-        public advises: character
+        imageSource: string,
+        public degreeOfPelotism: number,
+        public advises: string
     ) {
-        super(name, family, age, state, message);
-    }
-
-    communicate() {
-        return `${super.communicate()}I'm a loser.`;
+        super(name, family, age, isAlive, message, imageSource);
+        this.message = "I'm a loser.";
+        this.emoji = '🛡';
     }
 }
-
-export default Squire;

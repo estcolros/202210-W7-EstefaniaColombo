@@ -21,6 +21,10 @@ body {
     object-position: top;
     height: 200px;
 }
+.character__picture--die {
+    transform: rotate(3.142rad);
+    opacity: 0.1;
+}
 .character__card {
     position: relative;
     border: none;
@@ -79,7 +83,7 @@ body {
     right: 100vw;
     left: -100vw;
 }
-.comunications.on {
+.comunications__on {
     right: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 1);
@@ -95,4 +99,11 @@ body {
     position: absolute;
     right: 5px;
     top: 5px;
+}
+
+.fa-thumbs-up:before {
+    color: rgb(53, 249, 82);
+}
+.fa-thumbs-down:before {
+    color: rgb(253, 31, 31);
 }

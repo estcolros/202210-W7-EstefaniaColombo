@@ -1,20 +1,17 @@
-import character from './character.js';
+import { Character } from './Character.js';
 
-export class Advisor extends character {
+export class Advisor extends Character {
     constructor(
         name: string,
         family: string,
         age: number,
-        state: boolean,
+        isAlive: boolean,
         message: string,
-        public advises: character
+        imageSource: string,
+        public advises: string
     ) {
-        super(name, family, age, state, message);
-    }
-
-    communicate() {
-        return `${super.communicate()}I don't know why, but I think I'm going to die soon.`;
+        super(name, family, age, isAlive, message, imageSource);
+        this.message = "I don't know why, but I think I'm going to die soon.";
+        this.emoji = '🎓';
     }
 }
-
-export default Advisor;

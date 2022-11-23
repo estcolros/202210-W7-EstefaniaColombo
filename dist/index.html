@@ -17,7 +17,8 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         />
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="src/index.js" type="module"></script>
+        <script src="/dist/scripts/index.js" type="module"></script>
+
         <link
             rel="shortcut icon"
             href="/assets/favicon/favicon.png"
@@ -25,62 +26,9 @@
         />
     </head>
     <body>
-        <div class="app container">
-            <ul class="characters-list row list-unstyled">
-                <li class="character col">
-                    <div class="card character__card">
-                        <img
-                            src="/assets/images/no-one.jpg"
-                            alt="Nombre y familia del personaje"
-                            class="character__picture card-img-top"
-                        />
-                        <div class="card-body">
-                            <h2 class="character__name card-title h4">
-                                Nombre y familia
-                            </h2>
-                            <div class="character__info">
-                                <ul class="list-unstyled">
-                                    <li>Edad: X años</li>
-                                    <li>
-                                        Estado:
-                                        <em class="fas fa-thumbs-down"></em>
-                                        <em class="fas fa-thumbs-up"></em>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="character__overlay">
-                                <ul class="list-unstyled">
-                                    <li>Años de reinado: X</li>
-                                    <li>Arma: XXX</li>
-                                    <li>Destreza: X</li>
-                                    <li>Peloteo: X</li>
-                                    <li>Asesora a: X</li>
-                                    <li>Sirve a: X</li>
-                                </ul>
-                                <div class="character__actions">
-                                    <button class="character__action btn">
-                                        habla
-                                    </button>
-                                    <button class="character__action btn">
-                                        muere
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <em class="emoji"></em>
-                    </div>
-                </li>
-            </ul>
+        <div class="app-container">
+            <slot name="render-content"></slot>
         </div>
-        <div class="comunications">
-            <p class="comunications__text display-1">
-                Una frase que dice alguien
-            </p>
-            <img
-                class="comunications__picture"
-                src="/assets/images/no-one.jpg"
-                alt="Nombre y familia del que habla"
-            />
-        </div>
+        <div class="comunications"></div>
     </body>
 </html>

@@ -1,21 +1,18 @@
-import character from './character.js';
+import { Character } from './Character.js';
 
-class Fighter extends character {
+export class Fighter extends Character {
     constructor(
         name: string,
         family: string,
         age: number,
-        state: boolean,
+        isAlive: boolean,
         message: string,
-        dexterity: number,
+        imageSource: string,
+        public dexterity: number,
         public weapon: string
     ) {
-        super(name, family, age, state, message);
-    }
-
-    communicate(): string {
-        return `${super.communicate()}First I hit and then I ask.`;
+        super(name, family, age, isAlive, message, imageSource);
+        this.message = 'First I hit and then I ask.';
+        this.emoji = '🗡';
     }
 }
-
-export default Fighter;
