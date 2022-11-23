@@ -105,6 +105,7 @@ const renderContent = () => {
     slots.forEach((item, i) => (item.outerHTML = templates[i]));
 };
 renderContent();
+
 const handleClickDie = (event: any) => {
     console.log('click DIE');
     console.log(event.target.value);
@@ -116,6 +117,7 @@ const handleClickDie = (event: any) => {
     dieListeners();
     comunicateListeners();
 };
+
 const handleClickComunicate = (event: any) => {
     console.log('click COMUNICATE');
     console.log(event.target.value);
