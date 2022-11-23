@@ -130,9 +130,8 @@ const handleClickComunicate = (event: any) => {
     element.classList.add('comunications__on');
 
     setTimeout(() => {
-        if (element) {
-            element.classList.remove('comunications__on');
-        }
+        if (!element) return;
+        element.classList.remove('comunications__on');
     }, 2000);
     comunicateListeners();
 };
