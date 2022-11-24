@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from './character.js';
 export class Squire extends Character {
     degreeOfPelotism;
     advises;
