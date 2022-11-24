@@ -9,7 +9,7 @@ const joffrey = new King(
     16,
     true,
     'You are all going to die.',
-    '/assets/images/joffrey.jpg',
+    'assets/images/joffrey.jpg',
     2
 );
 
@@ -19,7 +19,7 @@ const jaime = new Fighter(
     35,
     true,
     'First I hit and then I ask',
-    '/assets/images/jaime.jpg',
+    'assets/images/jaime.jpg',
     8,
     'Sword'
 );
@@ -29,7 +29,7 @@ const daenerys = new Fighter(
     24,
     true,
     'First I hit and then I ask',
-    '/assets/images/daenerys.jpg',
+    'assets/images/daenerys.jpg',
     10,
     'Dragons'
 );
@@ -40,7 +40,7 @@ const tyrion = new Advisor(
     39,
     true,
     "I don't know why, but I think I'm going to die soon",
-    '/assets/images/tyrion.jpg',
+    'assets/images/tyrion.jpg',
     'Daenerys'
 );
 
@@ -50,7 +50,7 @@ const bronn = new Squire(
     56,
     true,
     "I'm a loser",
-    '/assets/images/bronn.jpg',
+    'assets/images/bronn.jpg',
     0,
     'Jaime'
 );
