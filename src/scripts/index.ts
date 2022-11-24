@@ -1,7 +1,7 @@
-import { King } from './King.js';
-import { Fighter } from './Fighter.js';
-import { Squire } from './Squire.js';
-import { Advisor } from './Advisor.js';
+import { King } from './king.js';
+import { Fighter } from './fighter.js';
+import { Squire } from './squire.js';
+import { Advisor } from './advisor.js';
 import { characters } from './characters.js';
 import { Character } from './character.js';
 
