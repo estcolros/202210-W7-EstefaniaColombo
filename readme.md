@@ -1,4 +1,4 @@
-![banner-week5](./assets/bannerGoT/banner.jpg)
+![banner-week5](dist/assets/bannerGoT/banner.jpg)
 
 # Challenge week 7
 
