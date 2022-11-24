@@ -1,7 +1,7 @@
-import { King } from './King.js';
-import { Fighter } from './Fighter.js';
-import { Squire } from './Squire.js';
-import { Advisor } from './Advisor.js';
+import { King } from './king.js';
+import { Fighter } from './fighter.js';
+import { Squire } from './squire.js';
+import { Advisor } from './advisor.js';
 const joffrey = new King('Joffrey', 'Baratheon', 16, true, 'You are all going to die.', '/assets/images/joffrey.jpg', 2);
 const jaime = new Fighter('Jaime', 'Lannister', 35, true, 'First I hit and then I ask', '/assets/images/jaime.jpg', 8, 'Sword');
 const daenerys = new Fighter('Daenerys', 'Targaryen', 24, true, 'First I hit and then I ask', '/assets/images/daenerys.jpg', 10, 'Dragons');

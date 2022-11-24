@@ -1,7 +1,7 @@
-import { King } from './King.js';
-import { Fighter } from './Fighter.js';
-import { Squire } from './Squire.js';
-import { Advisor } from './Advisor.js';
+import { King } from './king.js';
+import { Fighter } from './fighter.js';
+import { Squire } from './squire.js';
+import { Advisor } from './advisor.js';
 
 const joffrey = new King(
     'Joffrey',
