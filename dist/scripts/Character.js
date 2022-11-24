@@ -3,18 +3,18 @@ export class Character {
     family;
     age;
     isAlive;
-    message;
     imageSource;
     serie;
+    message;
     emoji;
-    constructor(name, family, age, isAlive = true, message = '', imageSource, serie = 'Game of Thrones', emoji = '') {
+    constructor(name, family, age, isAlive = true, imageSource, serie = 'Game of Thrones', message, emoji) {
         this.name = name;
         this.family = family;
         this.age = age;
         this.isAlive = isAlive;
-        this.message = message;
         this.imageSource = imageSource;
         this.serie = serie;
+        this.message = message;
         this.emoji = emoji;
     }
     communicate() {
