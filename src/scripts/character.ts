@@ -4,10 +4,10 @@ export class Character {
         public family: string,
         public age: number,
         public isAlive: boolean = true,
+        public message: string = '',
         public imageSource: string,
         public serie: string = 'Game of Thrones',
-        public message?: string,
-        public emoji?: string
+        public emoji: string = ''
     ) {}
 
     communicate() {

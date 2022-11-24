@@ -3,7 +3,7 @@ import { Fighter } from './Fighter.js';
 import { Squire } from './Squire.js';
 import { Advisor } from './Advisor.js';
 import { characters } from './characters.js';
-import { Character } from './Character.js';
+import { Character } from './character.js';
 
 const charactersTemplate = () => {
     let contCharsTemplate = `<div class="app container"><ul class="characters-list row list-unstyled">`;

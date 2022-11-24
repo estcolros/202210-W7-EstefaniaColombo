@@ -1,4 +1,4 @@
-import { Character } from './Character.js';
+import { Character } from './character.js';
 export class Advisor extends Character {
     advises;
     constructor(name, family, age, isAlive, message, imageSource, advises) {
